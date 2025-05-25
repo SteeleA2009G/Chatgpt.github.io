@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Nights Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #66fcf1;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .auth {
+      max-width: 400px;
+      margin: 40px auto;
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .auth h2 {
+      color: #66fcf1;
+    }
+    .auth input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .auth button {
+      width: 100%;
+      padding: 10px;
+      background: #66fcf1;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Urban Nights Gallery</h1>
+    <p>Sign up to view and save your favorite generated images</p>
+  </header>  <div class="auth">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button onclick="alert('This is a mock signup.')">Sign Up</button>
+  </div>  <section class="gallery">
+    <img src="img1.jpg" alt="Urban Night 1">
+    <img src="img2.jpg" alt="Urban Night 2">
+    <img src="img3.jpg" alt="Urban Night 3">
+    <img src="img4.jpg" alt="Urban Night 4">
+  </section>
+</body>
+</html>
